@@ -1,0 +1,14 @@
+[package]
+name = "yespower"
+version = "1.0.0"
+edition = "2021"
+license = "GPL-3.0-only"
+description = "yespower proof-of-work hash (reference port from Openwall C)"
+readme = "README.md"
+keywords = ["yespower", "pow", "yescrypt", "hash"]
+categories = ["cryptography", "algorithms"]
+
+[dependencies]
+hmac = "0.12"
+pbkdf2 = { version = "0.12", default-features = false, features = ["hmac"] }
+sha2 = "0.10"
